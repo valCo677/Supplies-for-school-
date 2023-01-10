@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class vacationBookList {
+    public static void main( String[] args ) {
+        Scanner scanner = new Scanner ( System.in );
+        int penPackages = Integer.parseInt ( scanner.nextLine () );
+        int highLitherPackages = Integer.parseInt ( scanner.nextLine () );
+        int cleanAgent = Integer.parseInt ( scanner.nextLine () );
+        int percentDiscount = Integer.parseInt ( scanner.nextLine () );
+        double priceForPenPackages = penPackages*5.80;
+        double priceForPeHighlighters = highLitherPackages*7.20;
+        double priceForCleanАgagent = cleanAgent*1.20;
+        double totalMaterial = priceForPeHighlighters+priceForCleanАgagent+priceForPenPackages;
+        double discount = totalMaterial*(percentDiscount/100.0);
+        double totalSum = totalMaterial-discount;
+        System.out.println (totalSum);
+
+
+
+    }
+}
